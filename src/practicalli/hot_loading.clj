@@ -6,8 +6,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (ns practicalli.hot-loading
-  (:gen-class)
-  (:require [ring.adapter.jetty :refer [run-jetty]]))
+  (:gen-class))
+
 
 ;; Rich comment block with redefined vars ignored
 #_{:clj-kondo/ignore [:redefined-var]}
