@@ -1,50 +1,27 @@
-# hot-loading
+![Clojure REPL driven development with hotload of libraries](https://raw.githubusercontent.com/practicalli/graphic-design/live/clojure/clojure-repl-hotload-libraries.png)
 
-FIXME: my new application.
+# REPL driven development with hot-loading of Libraries
+A simple web application server that is created using REPL driven development and hot-loading of libraries using `clojure.tools.deps.alpha`
 
-## Installation
+> NOTE: `clojure.tools.deps.alpha.repl/add-libs` design is not finalized and may change at any time without notice.  If hot-loading stops working, check the [GitHub project](https://github.com/clojure/tools.deps.alpha) for changes.
 
-Download from https://github.com/practicalli/hot-loading
+* [Project Repository](https://github.com/practicalli/hot-loading)
+
 
 ## Usage
+Start a REPL using the :alpha/hotload-libs alias from [practicalli/clojure-deps-edn](http://practicalli.github.io/clojure/clojure-tools/install/community-tools.html) user-level configuration
 
-FIXME: explanation
+With Rebel Readline Terminal REPL UI with nREPL support:
+```shell
+clojure -M:alpha/hotload-libs:repl/rebel-nrepl
+```
 
-Run the project directly:
-
-    $ clojure -M -m practicalli.hot-loading
-
-Run the project's tests (they'll fail until you edit them):
-
-    $ clojure -M:test:runner
-
-Build an uberjar:
-
-    $ clojure -M:uberjar
-
-Run that uberjar:
-
-    $ java -jar hot-loading.jar
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Or with Clojure nREPL editor support for Cider, Calva, Conjure, etc.
+```shell
+clojure -M:alpha/hotload-libs:middleware/cider-clj
+```
 
 ## License
-
 Copyright © 2021 Practicalli
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Creative Commons Attribution Share-Alike 4.0 International
