@@ -21,6 +21,14 @@ Or with Clojure nREPL editor support for Cider, Calva, Conjure, etc.
 clojure -M:alpha/hotload-libs:middleware/cider-clj
 ```
 
+Open the `src/practicalli/hot_loading.clj` file and evaluate each expression in turn that is contained within the `(comment ,,,)` rich commend block.
+
+Alternatively, [use the `deps.edn` project configuration file to hotload libraries](https://practicalli.github.io/clojure/alternative-tools/clojure-tools/hotload-libraries.html#using-add-libs-with-project-configuration-file).
+
+
+## Use cases to explore
+1) building a web application and wish to try different html generation libraries, hiccup and sablono.  Hot load each of these libraries and try them out with the existing web application server.
+
 ## License
 Copyright © 2021 Practicalli
 
