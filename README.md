@@ -9,17 +9,14 @@ A simple web application server that is created using REPL driven development an
 
 
 ## Usage
-Start a REPL using the :alpha/hotload-libs alias from [practicalli/clojure-deps-edn](http://practicalli.github.io/clojure/clojure-tools/install/community-tools.html) user-level configuration
+Start a REPL using the :repl/reloaded alias from [practicalli/clojure-deps-edn](http://practicalli.github.io/clojure/clojure-tools/install/community-tools.html) user-level configuration
 
 With Rebel Readline Terminal REPL UI with nREPL support:
 ```shell
-clojure -M:alpha/hotload-libs:repl/rebel-nrepl
+clojure -M:repl/reloaded
 ```
 
-Or with Clojure nREPL editor support for Cider, Calva, Conjure, etc.
-```shell
-clojure -M:alpha/hotload-libs:middleware/cider-clj
-```
+> Alternatively, use `:dev/reloaded` or `:lib/hotload` aliases with any `clojure` command to start a REPL
 
 Open the `src/practicalli/hot_loading.clj` file and evaluate each expression in turn that is contained within the `(comment ,,,)` rich commend block.
 
