@@ -1,6 +1,11 @@
+# TO BE DEPRECATED
+Clojure 1.12.x includes the add-libs function directly and the clojure.tools.deps.alpha library approach is deprecated.
+
+The approach used in this repository will still work for Clojure 1.11.x, although will eventually be replaced by a Clojure 1.12.x version.
+
 ![Clojure REPL driven development with hotload of libraries](https://raw.githubusercontent.com/practicalli/graphic-design/live/clojure/clojure-repl-hotload-libraries.png)
 
-# REPL driven development with hot-loading of Libraries
+## REPL driven development with hot-loading of Libraries
 A simple web application server that is created using REPL driven development and hot-loading of libraries using `clojure.tools.deps.alpha`
 
 > NOTE: `clojure.tools.deps.alpha.repl/add-libs` design is not finalized and may change at any time without notice.  If hot-loading stops working, check the [GitHub project](https://github.com/clojure/tools.deps.alpha) for changes.
